@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tayyab khan | Developer Portfolio</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Tayyab khan</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="hire-btn">Hire Me ↗</a>
+    </nav>
+    <div class="hero" id="Home">
+      <p class="Welcome">WELCOME TO MY PORTFOLIO</p>
+
+      <h1>Hello, I am Tayyab khan</h1>
+      <h2 class="typing-text">Java Full Stack Developer</h2>
+
+      <div class="profile-container">
+        <img src="image/tayyab.jpeg" alt="Tayyab Khan" class="profile-photo" />
+      </div>
+
+      <p class="description">
+        I have compeleted my BCA and MCA from IFTM University. I am Passionate
+        about learning java development and building Project to improve my
+        programming skills.
+      </p>
+      <a href="#project" class="project-btn">
+        view My Project
+        <span></span>
+      </a>
+      <a href="files/Tayyab_Khan_Java_Full_Stack_Resume.pdf"
+   class="project-btn" download>
+    Download My Resume ↓
+</a>
+<a href="https://github.com/Tayyabkhan-dev-hub"
+   class="project-btn"
+   target="_blank"
+   rel="noopener noreferrer">
+    Visit My GitHub ↗
+</a>  
+   
+      <p>Education: BCA and MCA</p>
+    </div>
+
+    <section id="about" class="about-section">
+      <p class="section-tag">GET TO KNOW ME</p>
+
+      <h2>About Me</h2>
+
+      <div class="about-card">
+        <h3>Java Full Stack Developer</h3>
+
+        <p>
+          Hello! I'm Tayyab Khan. I have completed my BCA and MCA from IFTM
+          University. I am passionate about Java Full Stack Development and
+          continuously improving my programming skills by building projects.
+        </p>
+
+        <div class="education">
+          <h4>Education</h4>
+
+          <div class="education-item">
+            <span>BCA</span>
+            <span class="education-year">2024</span>
+          </div>
+
+          <div class="education-item">
+            <span>MCA</span>
+            <span class="education-year">2026</span>
+          </div>
+
+          <p class="university-name">IFTM University</p>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="skills-section">
+      <p class="section-tag">WHAT I AM LEARNING</p>
+
+      <h2>My Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <span class="skill-icon">☕</span>
+          <h3>Java</h3>
+          <p>Core Java & OOP</p>
+        </div>
+
+        <div class="skill-card">
+          <span class="skill-icon">🌐</span>
+          <h3>HTML</h3>
+          <p>Web Page Structure</p>
+        </div>
+
+        <div class="skill-card">
+          <span class="skill-icon">🎨</span>
+          <h3>CSS</h3>
+          <p>Styling & Animations</p>
+        </div>
+
+        <div class="skill-card">
+          <span class="skill-icon">⚡</span>
+          <h3>JavaScript</h3>
+          <p>Interactive Web Pages</p>
+        </div>
+
+        <div class="skill-card">
+          <span class="skill-icon">🗄️</span>
+          <h3>SQL</h3>
+          <p>Database Fundamentals</p>
+        </div>
+
+        <div class="skill-card">
+          <span class="skill-icon">🔧</span>
+          <h3>Git & GitHub</h3>
+          <p>Version Control Basics</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact-section">
+      <p class="section-tag">LET'S CONNECT</p>
+
+      <h2>Contact Me</h2>
+
+      <p class="contact-description">
+        Have an opportunity or project in mind? Feel free to get in touch.
+      </p>
+
+      <a href="mailto:tayyabkhan1192002@gmail.com" class="contact-btn">
+        <span>✉</span> Email Me
+      </a>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Tayyab Khan | Java Full Stack Developer</p>
+      <p>Built with HTML, CSS & ❤️</p>
+    </footer>
+    <script>
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show-section");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.15
+    });
+
+    sections.forEach((section) => {
+        section.classList.add("hidden-section");
+        observer.observe(section);
+    });
+</script>
+  </body>
+</html>
