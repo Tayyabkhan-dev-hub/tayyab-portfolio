@@ -518,4 +518,49 @@ section {
         padding: 10px 20px;
         font-size: 14px;
     }
+    /* Professional Navbar Improvements */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 18px 8%;
+    background: rgba(11, 18, 36, 0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+.nav-links a {
+    position: relative;
+    padding: 8px 0;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #38bdf8;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.hire-btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hire-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 18px rgba(56, 189, 248, 0.3);
+}
 }
