@@ -564,3 +564,41 @@ section {
     box-shadow: 0 5px 18px rgba(56, 189, 248, 0.3);
 }
 }
+/* Mobile Responsive Fix */
+@media screen and (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hero {
+    width: 100%;
+    padding: 80px 16px 40px;
+  }
+
+  nav {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  section {
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
